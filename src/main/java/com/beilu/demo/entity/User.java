@@ -1,10 +1,12 @@
+package main.java.com.beilu.demo.entity;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @TableName("user")
 public class user {
     @TableId(Type=IdType.ASSIGN_ID)//雪花算法
-    priavte Long id;
+    private Long id;
     private String username;
     private String nickname;
     private Integer age;
